@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles\main.css">
+    <title>Aniversário</title>
+  <script src="/main.js"></script></head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <p class="hero__text">
+          O maior evento de tecnologia do Brasil começa em
+          <span id="contador"></span>
+        </p>
+        <div class="infos-bar">
+          <ul class="infos-bar__infos">
+            <li class="infos-bar__infos__item">
+              <b>Localização</b>Estrada Pico Agudo, KM 5,0 - Santo Antônio do
+              Pinhal - SP
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Preço</b>A partir de R$ 120,00
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Quando</b>12/12/2024 às 19hrs
+            </li>
+          </ul>
+          <a href="" class="button button--primary"> Garanta sua Vaga </a>
+        </div>
+      </div>
+    </header>
+    <section class="event">
+      <div class="container" data-aos="fade-right">
+        <div class="event__details">
+          <h2 class="event__details__title">Opções de esportes</h2>
+          <p class="event__details__description">
+            "Para um aniversário cheio de adrenalina, um pico agudo oferece
+            várias opções esportivas, como escalada, rapel e trilhas de mountain
+            bike. Com instrutores experientes e equipamentos de segurança,
+            garantimos uma experiência emocionante e segura. Prepare-se para uma
+            festa cheia de aventura no topo do mundo!"
+          </p>
+        </div>
+        <img class="event__image" src="/santo-antonio-pico-agudo.08c77fc5.jpg" alt="front-end">
+      </div>
+    </section>
+    <section class="event event--image-left">
+      <div class="container" data-aos="fade-left">
+        <div class="event__details">
+          <h2 class="event__details__title">Estadia</h2>
+          <p class="event__details__description">
+            "Desfrute de uma estadia tranquila e relaxante em nossa pousada.
+            Situada em um ambiente pitoresco, oferecemos acomodações
+            confortáveis e uma equipe hospitaleira pronta para tornar sua
+            experiência memorável. Permita-se desconectar e recarregar as
+            energias enquanto desfruta da serenidade do nosso refúgio."
+          </p>
+        </div>
+        <img class="event__image" src="/pousada.6e3e4f94.jpg" alt="front-end">
+      </div>
+    </section>
+    <section class="music">
+      <div class="container">
+        <h2 class="title">Que tal dar um help na playlist?</h2>
+        <div class="form-music">
+          <form>
+            <label for="music">Deixe sua sugestão</label>
+            <input type="text" id="music">
+          </form>
+          <button type="submit" class="button button--primary" id="enviar-musica">
+            Enviar
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/scripts\main.js"></script>
+  </body>
+</html>

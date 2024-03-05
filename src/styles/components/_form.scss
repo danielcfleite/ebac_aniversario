@@ -1,0 +1,53 @@
+form {
+  display: flex;
+  padding: 2vh 0;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.3rem;
+
+  input {
+    padding: 0.8rem 0.5rem;
+    width: 15rem;
+    border-radius: 10px;
+    border: none;
+    color: black;
+  }
+}
+
+.form-music {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select,
+textarea {
+  color: black;
+}
+
+textarea:focus,
+input:focus {
+  color: black;
+}
+
+.music {
+  padding: 5vh 0;
+
+  button {
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: #22460d;
+    cursor: pointer;
+    transition: 0.05s;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  .title {
+    text-align: center;
+  }
+}
