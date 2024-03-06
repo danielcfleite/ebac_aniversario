@@ -2,6 +2,7 @@ AOS.init();
 const contador = document.querySelector("#contador");
 const dataDoEvento = new Date("Jun 29, 2024 20:00:00");
 const TimeStampDoEvento = dataDoEvento.getTime();
+const inputMusica = document.querySelector("#music");
 
 const contaAsHoras = setInterval(() => {
   const agora = new Date();
@@ -36,5 +37,6 @@ const contaAsHoras = setInterval(() => {
 const botaoEnviar = document.querySelector("#enviar-musica");
 
 botaoEnviar.addEventListener("click", () => {
-  alert("Obrigado por enviar a sua sugestão");
+  const musica = inputMusica.value;
+  alert(`Obrigado por enviar a sua sugestão: ${musica}`);
 });

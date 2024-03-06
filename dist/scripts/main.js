@@ -122,6 +122,7 @@ AOS.init();
 var contador = document.querySelector("#contador");
 var dataDoEvento = new Date("Jun 29, 2024 20:00:00");
 var TimeStampDoEvento = dataDoEvento.getTime();
+var inputMusica = document.querySelector("#music");
 var contaAsHoras = setInterval(function () {
   var agora = new Date();
   var TimeStampAtual = agora.getTime();
@@ -139,7 +140,8 @@ var contaAsHoras = setInterval(function () {
 }, 1000);
 var botaoEnviar = document.querySelector("#enviar-musica");
 botaoEnviar.addEventListener("click", function () {
-  alert("Obrigado por enviar a sua sugestão");
+  var musica = inputMusica.value;
+  alert("Obrigado por enviar a sua sugest\xE3o: ".concat(musica));
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -166,7 +168,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57524" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60559" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
